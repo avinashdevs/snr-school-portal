@@ -42,9 +42,9 @@ export function SiteFooter() {
         <div>
           <h4 className="text-sm font-semibold uppercase tracking-wider text-foreground">Reach Us</h4>
           <ul className="mt-4 space-y-3 text-sm text-muted-foreground">
-            <li className="flex items-start gap-2"><MapPin className="mt-0.5 h-4 w-4 text-primary" /> {SCHOOL.city}</li>
-            <li className="flex items-start gap-2"><Phone className="mt-0.5 h-4 w-4 text-primary" /> <a href={`tel:${SCHOOL.phone.replace(/\s/g,'')}`} className="hover:text-primary">{SCHOOL.phone}</a></li>
-            <li className="flex items-start gap-2"><Mail className="mt-0.5 h-4 w-4 text-primary" /> office@snrvidhyanethra.edu</li>
+            <li className="flex items-start gap-2"><MapPin className="mt-0.5 h-4 w-4 text-primary" /><span>{SCHOOL.city}</span></li>
+            <li className="flex items-start gap-2"><Phone className="mt-0.5 h-4 w-4 text-primary" /><a href={`tel:${SCHOOL.phone.replace(/\s/g,'')}`} className="hover:text-primary">{SCHOOL.phone}</a></li>
+            <li className="flex items-start gap-2"><Mail className="mt-0.5 h-4 w-4 text-primary" /><span>office@snrvidhyanethra.edu</span></li>
             <li>
               <a href={SCHOOL.instagram} target="_blank" rel="noreferrer noopener" className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-3 py-1.5 text-xs font-medium hover:border-primary hover:text-primary">
                 <Instagram className="h-3.5 w-3.5" /> @snr.school_sathy
