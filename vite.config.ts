@@ -15,9 +15,7 @@ export default isVercel
       plugins: [
         tsConfigPaths(),
         tailwindcss(),
-        tanstackStart({
-          target: "vercel",
-        }),
+        tanstackStart(),
         viteReact(),
       ],
     })
